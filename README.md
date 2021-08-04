@@ -14,6 +14,10 @@ kubectl create -f replicasets/rs1.yaml
 kubectl delete pod nginx
 kubectl get replicationcontroller
 kubectl create -f deployments/dp.yaml
+kubectl create -f deployments/frontend.yaml --save-config
+kubectl apply -f deployments/frontend.yaml
+
+
 
 
 
