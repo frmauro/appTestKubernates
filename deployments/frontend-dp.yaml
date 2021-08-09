@@ -14,9 +14,9 @@ spec:
         type: frontend
     spec:
       containers:
-        - name: frontend-container
+        - name: nginx-container
           image: nginx
   selector:
     matchLabels:
       type: frontend
-  replicas: 3                    
+  replicas: 4                

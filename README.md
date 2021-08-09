@@ -16,6 +16,11 @@ kubectl get replicationcontroller
 kubectl create -f deployments/dp.yaml
 kubectl create -f deployments/frontend.yaml --save-config
 kubectl apply -f deployments/frontend.yaml
+minikube ip
+minikube service frontend-svc --url
+kubectl create -f services/frontend-svc.yaml --save-config --record
+kubectl create -f deployments/frontend-dp.yaml --save-config --record
+
 
 
 
